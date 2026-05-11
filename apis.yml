@@ -1,0 +1,63 @@
+aid: holded
+name: Holded
+description: >-
+  Holded is a cloud-based all-in-one business management platform from Spain
+  (now part of Visma) that combines ERP, CRM, accounting, invoicing,
+  inventory, project management, HR, and team collaboration features for
+  small and medium-sized businesses. The Holded REST API provides
+  programmatic access to invoicing, contacts, products, accounting,
+  projects, employees, and CRM data using a simple API key authentication
+  scheme over JSON.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - ERP
+  - CRM
+  - Accounting
+  - Invoicing
+  - Business Management
+  - SMB
+  - Spain
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/holded/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: holded:rest-api
+    name: Holded REST API
+    description: >-
+      REST API for managing invoicing, contacts, products, accounting,
+      projects, employees, and CRM records inside the Holded business
+      management platform. Authentication uses an API key passed via
+      the `key` header on every request.
+    humanURL: https://developers.holded.com
+    baseURL: https://api.holded.com/api
+    tags:
+      - ERP
+      - CRM
+      - Invoicing
+      - Accounting
+      - Inventory
+      - Projects
+      - HR
+    properties:
+      - type: Documentation
+        url: https://developers.holded.com/reference
+      - type: API Key Guide
+        url: https://developers.holded.com/reference/api-key-1
+      - type: Help Center
+        url: https://help.holded.com/en/articles/6896051-how-to-generate-and-use-the-holded-api
+
+common:
+  - type: Website
+    url: https://www.holded.com
+  - type: Documentation
+    url: https://developers.holded.com
+  - type: Pricing
+    url: https://www.holded.com/pricing
+  - type: Sign Up
+    url: https://app.holded.com/register
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
