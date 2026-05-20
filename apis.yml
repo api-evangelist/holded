@@ -50,6 +50,10 @@ apis:
         url: https://help.holded.com/en/articles/6896051-how-to-generate-and-use-the-holded-api
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/holdedhub
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/holded
   - type: Website
     url: https://www.holded.com
   - type: Documentation
