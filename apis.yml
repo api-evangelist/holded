@@ -62,6 +62,8 @@ common:
     url: https://www.holded.com/pricing
   - type: SignUp
     url: https://app.holded.com/register
+  - type: LLMsTxt
+    url: https://api.holded.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
