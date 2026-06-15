@@ -1,0 +1,3164 @@
+{
+  "item": [
+    {
+      "id": "ca08683b-2f5d-432f-9041-95fb6a88f696",
+      "name": "List invoices",
+      "request": {
+        "name": "List invoices",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "invoice"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "72a682b0-c531-42ca-95da-d927faae3d17",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "invoice"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "c0b9bce8-513f-4597-bcf3-cb8b058fa653",
+      "name": "Create an invoice",
+      "request": {
+        "name": "Create an invoice",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "invoice"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ea4bd32c-bc3e-4e56-976a-b8b50dab187e",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "invoice"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "7ae5d1c2-1fd6-4108-b505-b0d8df332c7f",
+      "name": "Get an invoice",
+      "request": {
+        "name": "Get an invoice",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "invoice",
+            ":documentId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "documentId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "4371775b-99bc-42ec-8c54-3378d6659ed9",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "invoice",
+                ":documentId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "documentId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f3102a24-8e86-4514-83e8-19842861963d",
+      "name": "Update an invoice",
+      "request": {
+        "name": "Update an invoice",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "invoice",
+            ":documentId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "documentId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "PUT",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "21b6af7d-6eac-48ba-8bb0-41346c9ed23c",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "invoice",
+                ":documentId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "documentId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "PUT",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f7f227ec-26b5-46a7-a033-b22bf427fe77",
+      "name": "Delete an invoice",
+      "request": {
+        "name": "Delete an invoice",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "invoice",
+            ":documentId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "documentId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "DELETE",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "b0abe068-df92-4ea6-a198-af8b479342c2",
+          "name": "Deleted",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "invoice",
+                ":documentId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "documentId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "DELETE",
+            "body": {}
+          },
+          "status": "No Content",
+          "code": 204,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "c7afc320-0793-4179-8d47-9b774c4508c4",
+      "name": "List sales receipts",
+      "request": {
+        "name": "List sales receipts",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "salesreceipt"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "6bea5f2a-9167-40f7-bea5-7ccb57788327",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "salesreceipt"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "9ad31e2f-9e56-4134-a81f-d0307a850511",
+      "name": "Create a sales receipt",
+      "request": {
+        "name": "Create a sales receipt",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "salesreceipt"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "f4991f56-eaae-4847-b719-59217f2860ae",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "salesreceipt"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "ffe4b4fe-b0de-49e3-841f-9e963b667454",
+      "name": "List estimates / quotes",
+      "request": {
+        "name": "List estimates / quotes",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "estimate"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "28bdae01-4aac-43f1-bb87-4baad77cf6a2",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "estimate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "4721e177-6d7f-40b5-8c2a-8d6b7e7d95fd",
+      "name": "Create an estimate",
+      "request": {
+        "name": "Create an estimate",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "estimate"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "5f7dc2bd-7353-4e06-ad9d-d05fdbb5b6f9",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "estimate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "c2ea6ba1-e485-4913-9569-73e951d98e25",
+      "name": "List pro-forma invoices",
+      "request": {
+        "name": "List pro-forma invoices",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "proform"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7c638200-9437-40d2-9774-7f0c0a45f058",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "proform"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "26052929-c432-4ba7-9ebe-3d9eba1b513b",
+      "name": "Create a pro-forma invoice",
+      "request": {
+        "name": "Create a pro-forma invoice",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "proform"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "24d00937-09e0-48a6-8340-6945f0f27911",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "proform"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "b69d7a13-ee7e-4566-9c92-b0b845ff177b",
+      "name": "List credit notes",
+      "request": {
+        "name": "List credit notes",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "creditnote"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "3ca02276-401d-4aae-8dac-024527e6318e",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "creditnote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "93829332-a1a9-4236-8f0d-2aa2bb002ef0",
+      "name": "Create a credit note",
+      "request": {
+        "name": "Create a credit note",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "documents",
+            "creditnote"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "41ccf5e3-26ac-4d02-b3b4-caa8d34b53f5",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "documents",
+                "creditnote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "a5d2bb53-5074-41aa-a950-dcee9e90d5de",
+      "name": "List contacts",
+      "request": {
+        "name": "List contacts",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "contacts"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "4c2f9186-4327-4cb5-b50f-17f71f092ac3",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "contacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "07ed8e2c-1608-4893-b927-75cfd5f9f53c",
+      "name": "Create a contact",
+      "request": {
+        "name": "Create a contact",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "contacts"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "6089143a-7ff6-4013-bdc7-f0db91fdb363",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "contacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "3c107f23-b8f0-4e82-b45b-39b72bdfab9e",
+      "name": "Get a contact",
+      "request": {
+        "name": "Get a contact",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "contacts",
+            ":contactId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "contactId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "f3947209-9f5c-4a09-90b7-4aabdb66133d",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "contacts",
+                ":contactId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "contactId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "5babacf8-ad26-482a-89c2-8aaa00af132c",
+      "name": "Update a contact",
+      "request": {
+        "name": "Update a contact",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "contacts",
+            ":contactId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "contactId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "PUT",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "2301161a-f098-46db-bcf2-87e50ec63783",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "contacts",
+                ":contactId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "contactId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "PUT",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "1755c977-6ffa-429d-b1c1-718b9a6a1a31",
+      "name": "Delete a contact",
+      "request": {
+        "name": "Delete a contact",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "contacts",
+            ":contactId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "contactId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "DELETE",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "fb4d6286-6fe3-413b-a27c-32017a5b0a16",
+          "name": "Deleted",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "contacts",
+                ":contactId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "contactId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "DELETE",
+            "body": {}
+          },
+          "status": "No Content",
+          "code": 204,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "1c7fa6b1-c7be-4133-a01b-4774cfd75adb",
+      "name": "List products",
+      "request": {
+        "name": "List products",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "products"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "3405c18c-e472-4afb-9f80-c78266d826f6",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "products"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "694d7921-ee59-4b92-b062-35ad6751a008",
+      "name": "Create a product",
+      "request": {
+        "name": "Create a product",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "products"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "840ec09b-afbc-4a79-b10b-739597d4660a",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "products"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "3ec097ea-6664-4f12-8f5b-c617c39cfa0c",
+      "name": "Get a product",
+      "request": {
+        "name": "Get a product",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "products",
+            ":productId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "productId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "b74d7f52-98c2-43fa-9fcf-3ee223c44dfa",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "products",
+                ":productId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "productId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "b3632488-7cce-4c45-94c1-f775fdc6604c",
+      "name": "Update a product",
+      "request": {
+        "name": "Update a product",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "products",
+            ":productId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "productId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "PUT",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "172b23cb-b223-42af-a6b0-6ade21c088bd",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "products",
+                ":productId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "productId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "PUT",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "fdae1519-2cc3-4f71-8b7e-d3ac5b4fc071",
+      "name": "Delete a product",
+      "request": {
+        "name": "Delete a product",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "products",
+            ":productId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "productId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "DELETE",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "861b4567-acec-42d5-9ee4-5b6ba188097f",
+          "name": "Deleted",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "products",
+                ":productId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "productId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "DELETE",
+            "body": {}
+          },
+          "status": "No Content",
+          "code": 204,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "0d75a890-c1f0-4617-b8e1-e538d1117010",
+      "name": "List warehouses",
+      "request": {
+        "name": "List warehouses",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "warehouse"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "6dc9a3f7-1823-4def-8613-12175fcedf43",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "warehouse"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "78966de4-f13a-48dd-ba7d-95a98e6a3802",
+      "name": "List services",
+      "request": {
+        "name": "List services",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "services"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "f2ba3a85-0846-4cc7-ac3d-721faad7dfed",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "services"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "dda17989-37e9-477e-b54d-fee8ce70be4a",
+      "name": "Create a service",
+      "request": {
+        "name": "Create a service",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "services"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "b7cddc87-7a9b-4604-a1f9-d28d55fb02d5",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "services"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "82f43585-645e-4310-b582-1667bc08a495",
+      "name": "List payments",
+      "request": {
+        "name": "List payments",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "payments"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "f8de3184-b171-435c-ba09-8080abb73780",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "payments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "10655b22-1e11-421c-a61f-f0b2908e484a",
+      "name": "Create a payment",
+      "request": {
+        "name": "Create a payment",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "payments"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ea6965f9-d0e7-4db1-b875-0494b4276a7e",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "payments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "6b0532f1-0bb3-4075-9619-0e554f807e5c",
+      "name": "List treasury / bank accounts",
+      "request": {
+        "name": "List treasury / bank accounts",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "treasury"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "eded8046-9c63-41c4-82b1-37d11f894952",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "treasury"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f89f3a12-7861-4c8c-9352-3300fe66e86c",
+      "name": "List expense accounts",
+      "request": {
+        "name": "List expense accounts",
+        "description": {},
+        "url": {
+          "path": [
+            "invoicing",
+            "v1",
+            "expensesaccounts"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ef05fdd4-cfeb-43cd-ad5b-f079eed5bde9",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "invoicing",
+                "v1",
+                "expensesaccounts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f3480a1b-17cd-432d-8b99-c840e59ee1be",
+      "name": "List daily journal entries",
+      "request": {
+        "name": "List daily journal entries",
+        "description": {},
+        "url": {
+          "path": [
+            "accounting",
+            "v1",
+            "dailyjournal"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "f0b10827-2ed2-4cf8-abd3-a31356dfbbae",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "accounting",
+                "v1",
+                "dailyjournal"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "5f375f49-46f2-47cd-8b0a-ada7160d8d12",
+      "name": "Create a journal entry",
+      "request": {
+        "name": "Create a journal entry",
+        "description": {},
+        "url": {
+          "path": [
+            "accounting",
+            "v1",
+            "dailyjournal"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "3a393aae-124f-4e0c-b2ff-48e1c2eb5d0a",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "accounting",
+                "v1",
+                "dailyjournal"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "b5e47a12-2049-48bb-a0f4-2fb43011f49e",
+      "name": "List CRM funnels",
+      "request": {
+        "name": "List CRM funnels",
+        "description": {},
+        "url": {
+          "path": [
+            "crm",
+            "v1",
+            "funnels"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "9d812ac6-06ea-4ccd-b3a3-ee030c0c88a2",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "crm",
+                "v1",
+                "funnels"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "73839bde-b71d-4347-bf7c-85e293ccebe0",
+      "name": "List CRM leads / opportunities",
+      "request": {
+        "name": "List CRM leads / opportunities",
+        "description": {},
+        "url": {
+          "path": [
+            "crm",
+            "v1",
+            "leads"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "b4709f4f-0afa-473f-8eb0-5ef3a0a4cf0a",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "crm",
+                "v1",
+                "leads"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "49a04248-1100-497b-8f50-3e9b1a414560",
+      "name": "Create a CRM lead",
+      "request": {
+        "name": "Create a CRM lead",
+        "description": {},
+        "url": {
+          "path": [
+            "crm",
+            "v1",
+            "leads"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ce6212eb-8936-40d0-a1c8-da1e59ebe292",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "crm",
+                "v1",
+                "leads"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "19ee9cef-4157-4610-98df-4c3d9d6afc6b",
+      "name": "List projects",
+      "request": {
+        "name": "List projects",
+        "description": {},
+        "url": {
+          "path": [
+            "projects",
+            "v1",
+            "projects"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "e403abec-2766-4b44-9e60-9f99a864c27c",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "projects",
+                "v1",
+                "projects"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "aa1bfcbd-e1b0-4935-a085-17e3ee42f7fb",
+      "name": "Create a project",
+      "request": {
+        "name": "Create a project",
+        "description": {},
+        "url": {
+          "path": [
+            "projects",
+            "v1",
+            "projects"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "90858f82-7de9-40bd-9775-766e5b146d42",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "projects",
+                "v1",
+                "projects"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "e257d934-eb97-4f4f-9858-81d32bb07fdf",
+      "name": "List tasks for a project",
+      "request": {
+        "name": "List tasks for a project",
+        "description": {},
+        "url": {
+          "path": [
+            "projects",
+            "v1",
+            "projects",
+            ":projectId",
+            "tasks"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "projectId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "a618afc8-cb1b-4733-ba35-83110cd72acb",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "projects",
+                "v1",
+                "projects",
+                ":projectId",
+                "tasks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "projectId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "12775917-65b9-4bd4-a084-8551ae912629",
+      "name": "Create a project task",
+      "request": {
+        "name": "Create a project task",
+        "description": {},
+        "url": {
+          "path": [
+            "projects",
+            "v1",
+            "projects",
+            ":projectId",
+            "tasks"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "projectId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "df948506-a689-447b-bdb2-98277c9ae3a9",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "projects",
+                "v1",
+                "projects",
+                ":projectId",
+                "tasks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "projectId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "6f30243c-5727-49ff-b80e-858450da2048",
+      "name": "List employees",
+      "request": {
+        "name": "List employees",
+        "description": {},
+        "url": {
+          "path": [
+            "team",
+            "v1",
+            "employees"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "cceb6039-dc5c-417a-91f5-0071a1d1e1f0",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "team",
+                "v1",
+                "employees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "8051f4c2-2fdd-4c8e-9846-1d9eba6cb2cc",
+      "name": "Create an employee",
+      "request": {
+        "name": "Create an employee",
+        "description": {},
+        "url": {
+          "path": [
+            "team",
+            "v1",
+            "employees"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "9077a86b-1372-4159-a496-03428aac5d23",
+          "name": "Created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "team",
+                "v1",
+                "employees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "03440d97-3f61-4135-b20e-a40b5a5903fc",
+      "name": "List time-tracking entries",
+      "request": {
+        "name": "List time-tracking entries",
+        "description": {},
+        "url": {
+          "path": [
+            "team",
+            "v1",
+            "timetracking"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "62283fe6-487b-48a1-a91c-a51e0c32b632",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "team",
+                "v1",
+                "timetracking"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.holded.com/api",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "cab40ff7-613c-47c1-9a9c-34e0e4c5a086",
+    "name": "Holded REST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for the Holded business-management platform. Holded is part\nof Visma and offers ERP, CRM, accounting, invoicing, inventory, HR,\nprojects, and team collaboration capabilities. The Holded API\nexposes JSON over HTTPS, authenticated with a tenant API key passed\nvia the `key` request header. This spec captures the core resources\nin the public developer reference at developers.holded.com.\n\n\nContact Support:\n Name: Holded Developers",
+      "type": "text/plain"
+    }
+  }
+}

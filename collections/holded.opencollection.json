@@ -1,0 +1,557 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Holded REST API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "key",
+      "value": "{{key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "List invoices",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/invoice"
+      },
+      "docs": "List invoices"
+    },
+    {
+      "info": {
+        "name": "Create an invoice",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/invoice"
+      },
+      "docs": "Create an invoice"
+    },
+    {
+      "info": {
+        "name": "Get an invoice",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/invoice/:documentId",
+        "params": [
+          {
+            "name": "documentId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get an invoice"
+    },
+    {
+      "info": {
+        "name": "Update an invoice",
+        "type": "http"
+      },
+      "http": {
+        "method": "PUT",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/invoice/:documentId",
+        "params": [
+          {
+            "name": "documentId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update an invoice"
+    },
+    {
+      "info": {
+        "name": "Delete an invoice",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/invoice/:documentId",
+        "params": [
+          {
+            "name": "documentId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete an invoice"
+    },
+    {
+      "info": {
+        "name": "List sales receipts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/salesreceipt"
+      },
+      "docs": "List sales receipts"
+    },
+    {
+      "info": {
+        "name": "Create a sales receipt",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/salesreceipt"
+      },
+      "docs": "Create a sales receipt"
+    },
+    {
+      "info": {
+        "name": "List estimates / quotes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/estimate"
+      },
+      "docs": "List estimates / quotes"
+    },
+    {
+      "info": {
+        "name": "Create an estimate",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/estimate"
+      },
+      "docs": "Create an estimate"
+    },
+    {
+      "info": {
+        "name": "List pro-forma invoices",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/proform"
+      },
+      "docs": "List pro-forma invoices"
+    },
+    {
+      "info": {
+        "name": "Create a pro-forma invoice",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/proform"
+      },
+      "docs": "Create a pro-forma invoice"
+    },
+    {
+      "info": {
+        "name": "List credit notes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/creditnote"
+      },
+      "docs": "List credit notes"
+    },
+    {
+      "info": {
+        "name": "Create a credit note",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/documents/creditnote"
+      },
+      "docs": "Create a credit note"
+    },
+    {
+      "info": {
+        "name": "List contacts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/contacts"
+      },
+      "docs": "List contacts"
+    },
+    {
+      "info": {
+        "name": "Create a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/contacts"
+      },
+      "docs": "Create a contact"
+    },
+    {
+      "info": {
+        "name": "Get a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/contacts/:contactId",
+        "params": [
+          {
+            "name": "contactId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a contact"
+    },
+    {
+      "info": {
+        "name": "Update a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "PUT",
+        "url": "https://api.holded.com/api/invoicing/v1/contacts/:contactId",
+        "params": [
+          {
+            "name": "contactId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update a contact"
+    },
+    {
+      "info": {
+        "name": "Delete a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://api.holded.com/api/invoicing/v1/contacts/:contactId",
+        "params": [
+          {
+            "name": "contactId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a contact"
+    },
+    {
+      "info": {
+        "name": "List products",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/products"
+      },
+      "docs": "List products"
+    },
+    {
+      "info": {
+        "name": "Create a product",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/products"
+      },
+      "docs": "Create a product"
+    },
+    {
+      "info": {
+        "name": "Get a product",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/products/:productId",
+        "params": [
+          {
+            "name": "productId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a product"
+    },
+    {
+      "info": {
+        "name": "Update a product",
+        "type": "http"
+      },
+      "http": {
+        "method": "PUT",
+        "url": "https://api.holded.com/api/invoicing/v1/products/:productId",
+        "params": [
+          {
+            "name": "productId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Update a product"
+    },
+    {
+      "info": {
+        "name": "Delete a product",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://api.holded.com/api/invoicing/v1/products/:productId",
+        "params": [
+          {
+            "name": "productId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a product"
+    },
+    {
+      "info": {
+        "name": "List warehouses",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/warehouse"
+      },
+      "docs": "List warehouses"
+    },
+    {
+      "info": {
+        "name": "List services",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/services"
+      },
+      "docs": "List services"
+    },
+    {
+      "info": {
+        "name": "Create a service",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/services"
+      },
+      "docs": "Create a service"
+    },
+    {
+      "info": {
+        "name": "List payments",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/payments"
+      },
+      "docs": "List payments"
+    },
+    {
+      "info": {
+        "name": "Create a payment",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/invoicing/v1/payments"
+      },
+      "docs": "Create a payment"
+    },
+    {
+      "info": {
+        "name": "List treasury / bank accounts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/treasury"
+      },
+      "docs": "List treasury / bank accounts"
+    },
+    {
+      "info": {
+        "name": "List expense accounts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/invoicing/v1/expensesaccounts"
+      },
+      "docs": "List expense accounts"
+    },
+    {
+      "info": {
+        "name": "List daily journal entries",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/accounting/v1/dailyjournal"
+      },
+      "docs": "List daily journal entries"
+    },
+    {
+      "info": {
+        "name": "Create a journal entry",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/accounting/v1/dailyjournal"
+      },
+      "docs": "Create a journal entry"
+    },
+    {
+      "info": {
+        "name": "List CRM funnels",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/crm/v1/funnels"
+      },
+      "docs": "List CRM funnels"
+    },
+    {
+      "info": {
+        "name": "List CRM leads / opportunities",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/crm/v1/leads"
+      },
+      "docs": "List CRM leads / opportunities"
+    },
+    {
+      "info": {
+        "name": "Create a CRM lead",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/crm/v1/leads"
+      },
+      "docs": "Create a CRM lead"
+    },
+    {
+      "info": {
+        "name": "List projects",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/projects/v1/projects"
+      },
+      "docs": "List projects"
+    },
+    {
+      "info": {
+        "name": "Create a project",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/projects/v1/projects"
+      },
+      "docs": "Create a project"
+    },
+    {
+      "info": {
+        "name": "List tasks for a project",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/projects/v1/projects/:projectId/tasks",
+        "params": [
+          {
+            "name": "projectId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List tasks for a project"
+    },
+    {
+      "info": {
+        "name": "Create a project task",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/projects/v1/projects/:projectId/tasks",
+        "params": [
+          {
+            "name": "projectId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Create a project task"
+    },
+    {
+      "info": {
+        "name": "List employees",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/team/v1/employees"
+      },
+      "docs": "List employees"
+    },
+    {
+      "info": {
+        "name": "Create an employee",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.holded.com/api/team/v1/employees"
+      },
+      "docs": "Create an employee"
+    },
+    {
+      "info": {
+        "name": "List time-tracking entries",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.holded.com/api/team/v1/timetracking"
+      },
+      "docs": "List time-tracking entries"
+    }
+  ],
+  "bundled": true
+}
