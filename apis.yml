@@ -60,9 +60,9 @@ common:
     url: https://developers.holded.com
   - type: Pricing
     url: https://www.holded.com/pricing
-  - type: SignUp
+  - type: Signup
     url: https://app.holded.com/register
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://api.holded.com/llms.txt
 maintainers:
   - FN: Kin Lane
