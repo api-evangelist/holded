@@ -50,6 +50,10 @@ apis:
         url: https://help.holded.com/en/articles/6896051-how-to-generate-and-use-the-holded-api
 
 common:
+  - type: DomainSecurity
+    url: security/holded-domain-security.yml
+  - type: Authentication
+    url: authentication/holded-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/holdedhub
   - type: LinkedIn
@@ -64,6 +68,8 @@ common:
     url: https://app.holded.com/register
   - type: LlmsText
     url: https://api.holded.com/llms.txt
+  - url: https://www.holded.com/en/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
