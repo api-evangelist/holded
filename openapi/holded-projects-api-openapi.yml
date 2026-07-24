@@ -1,0 +1,75 @@
+openapi: 3.1.0
+info:
+  title: Holded REST Accounting Projects API
+  description: 'REST API for the Holded business-management platform. Holded is part
+
+    of Visma and offers ERP, CRM, accounting, invoicing, inventory, HR,
+
+    projects, and team collaboration capabilities. The Holded API
+
+    exposes JSON over HTTPS, authenticated with a tenant API key passed
+
+    via the `key` request header. This spec captures the core resources
+
+    in the public developer reference at developers.holded.com.
+
+    '
+  version: '1.0'
+  contact:
+    name: Holded Developers
+    url: https://developers.holded.com
+servers:
+- url: https://api.holded.com/api
+  description: Holded API root
+security:
+- ApiKeyAuth: []
+tags:
+- name: Projects
+paths:
+  /projects/v1/projects:
+    get:
+      summary: List projects
+      operationId: listProjects
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Projects
+    post:
+      summary: Create a project
+      operationId: createProject
+      responses:
+        '201':
+          description: Created
+      tags:
+      - Projects
+  /projects/v1/projects/{projectId}/tasks:
+    parameters:
+    - name: projectId
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      summary: List tasks for a project
+      operationId: listProjectTasks
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Projects
+    post:
+      summary: Create a project task
+      operationId: createProjectTask
+      responses:
+        '201':
+          description: Created
+      tags:
+      - Projects
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: key
+      description: Holded tenant API key, generated in account settings.
