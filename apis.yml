@@ -9,7 +9,19 @@ description: >-
   projects, employees, and CRM data using a simple API key authentication
   scheme over JSON.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/holded.png
 tags:
   - ERP
   - CRM
@@ -24,31 +36,79 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: holded:rest-api
-    name: Holded REST API
-    description: >-
-      REST API for managing invoicing, contacts, products, accounting,
-      projects, employees, and CRM records inside the Holded business
-      management platform. Authentication uses an API key passed via
-      the `key` header on every request.
-    humanURL: https://developers.holded.com
-    baseURL: https://api.holded.com/api
-    tags:
-      - ERP
-      - CRM
-      - Invoicing
-      - Accounting
-      - Inventory
-      - Projects
-      - HR
-    properties:
-      - type: Documentation
-        url: https://developers.holded.com/reference
-      - type: API Key Guide
-        url: https://developers.holded.com/reference/api-key-1
-      - type: Help Center
-        url: https://help.holded.com/en/articles/6896051-how-to-generate-and-use-the-holded-api
-
+- aid: holded:rest-api
+  name: Holded REST API
+  description: >-
+    REST API for managing invoicing, contacts, products, accounting, projects, employees, and CRM records
+    inside the Holded business management platform. Authentication uses an API key passed via the `key`
+    header on every request.
+  humanURL: https://developers.holded.com
+  baseURL: https://api.holded.com/api
+  tags:
+  - ERP
+  - CRM
+  - Invoicing
+  - Accounting
+  - Inventory
+  - Projects
+  - HR
+  properties:
+  - type: Documentation
+    url: https://developers.holded.com/reference
+  - type: API Key Guide
+    url: https://developers.holded.com/reference/api-key-1
+  - type: Help Center
+    url: https://help.holded.com/en/articles/6896051-how-to-generate-and-use-the-holded-api
+- aid: holded:holded-accounting-api
+  name: Holded Accounting API
+  description: The Accounting API from Holded — 1 operation(s) for accounting.
+  humanURL: https://developers.holded.com
+  baseURL: https://api.holded.com/api
+  tags:
+  - Accounting
+  properties:
+  - type: OpenAPI
+    url: openapi/holded-accounting-api-openapi.yml
+- aid: holded:holded-crm-api
+  name: Holded Crm API
+  description: The Crm API from Holded — 2 operation(s) for crm.
+  humanURL: https://developers.holded.com
+  baseURL: https://api.holded.com/api
+  tags:
+  - Crm
+  properties:
+  - type: OpenAPI
+    url: openapi/holded-crm-api-openapi.yml
+- aid: holded:holded-invoicing-api
+  name: Holded Invoicing API
+  description: The Invoicing API from Holded — 15 operation(s) for invoicing.
+  humanURL: https://developers.holded.com
+  baseURL: https://api.holded.com/api
+  tags:
+  - Invoicing
+  properties:
+  - type: OpenAPI
+    url: openapi/holded-invoicing-api-openapi.yml
+- aid: holded:holded-projects-api
+  name: Holded Projects API
+  description: The Projects API from Holded — 2 operation(s) for projects.
+  humanURL: https://developers.holded.com
+  baseURL: https://api.holded.com/api
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/holded-projects-api-openapi.yml
+- aid: holded:holded-team-api
+  name: Holded Team API
+  description: The Team API from Holded — 2 operation(s) for team.
+  humanURL: https://developers.holded.com
+  baseURL: https://api.holded.com/api
+  tags:
+  - Team
+  properties:
+  - type: OpenAPI
+    url: openapi/holded-team-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/holded-agentic-access.yml
