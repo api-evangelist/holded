@@ -1,0 +1,22 @@
+{
+  "provider": "holded",
+  "sources": [
+    "holded-accounting-api-openapi.yml",
+    "holded-crm-api-openapi.yml",
+    "holded-invoicing-api-openapi.yml",
+    "holded-projects-api-openapi.yml",
+    "holded-team-api-openapi.yml"
+  ],
+  "outputs": [
+    "holded-accounting-api-openapi.yml",
+    "holded-crm-api-openapi.yml",
+    "holded-invoicing-api-openapi.yml",
+    "holded-projects-api-openapi.yml",
+    "holded-team-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

@@ -1,0 +1,279 @@
+openapi: 3.1.0
+info:
+  title: Holded REST API
+  description: |
+    REST API for the Holded business-management platform. Holded is part
+    of Visma and offers ERP, CRM, accounting, invoicing, inventory, HR,
+    projects, and team collaboration capabilities. The Holded API
+    exposes JSON over HTTPS, authenticated with a tenant API key passed
+    via the `key` request header. This spec captures the core resources
+    in the public developer reference at developers.holded.com.
+  version: "1.0"
+  contact:
+    name: Holded Developers
+    url: https://developers.holded.com
+servers:
+  - url: https://api.holded.com/api
+    description: Holded API root
+security:
+  - ApiKeyAuth: []
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: key
+      description: Holded tenant API key, generated in account settings.
+paths:
+  /invoicing/v1/documents/invoice:
+    get:
+      summary: List invoices
+      operationId: listInvoices
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create an invoice
+      operationId: createInvoice
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/documents/invoice/{documentId}:
+    parameters:
+      - name: documentId
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      summary: Get an invoice
+      operationId: getInvoice
+      responses:
+        "200": { description: OK }
+    put:
+      summary: Update an invoice
+      operationId: updateInvoice
+      responses:
+        "200": { description: OK }
+    delete:
+      summary: Delete an invoice
+      operationId: deleteInvoice
+      responses:
+        "204": { description: Deleted }
+  /invoicing/v1/documents/salesreceipt:
+    get:
+      summary: List sales receipts
+      operationId: listSalesReceipts
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a sales receipt
+      operationId: createSalesReceipt
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/documents/estimate:
+    get:
+      summary: List estimates / quotes
+      operationId: listEstimates
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create an estimate
+      operationId: createEstimate
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/documents/proform:
+    get:
+      summary: List pro-forma invoices
+      operationId: listProformas
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a pro-forma invoice
+      operationId: createProforma
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/documents/creditnote:
+    get:
+      summary: List credit notes
+      operationId: listCreditNotes
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a credit note
+      operationId: createCreditNote
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/contacts:
+    get:
+      summary: List contacts
+      operationId: listContacts
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a contact
+      operationId: createContact
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/contacts/{contactId}:
+    parameters:
+      - name: contactId
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      summary: Get a contact
+      operationId: getContact
+      responses:
+        "200": { description: OK }
+    put:
+      summary: Update a contact
+      operationId: updateContact
+      responses:
+        "200": { description: OK }
+    delete:
+      summary: Delete a contact
+      operationId: deleteContact
+      responses:
+        "204": { description: Deleted }
+  /invoicing/v1/products:
+    get:
+      summary: List products
+      operationId: listProducts
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a product
+      operationId: createProduct
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/products/{productId}:
+    parameters:
+      - name: productId
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      summary: Get a product
+      operationId: getProduct
+      responses:
+        "200": { description: OK }
+    put:
+      summary: Update a product
+      operationId: updateProduct
+      responses:
+        "200": { description: OK }
+    delete:
+      summary: Delete a product
+      operationId: deleteProduct
+      responses:
+        "204": { description: Deleted }
+  /invoicing/v1/warehouse:
+    get:
+      summary: List warehouses
+      operationId: listWarehouses
+      responses:
+        "200": { description: OK }
+  /invoicing/v1/services:
+    get:
+      summary: List services
+      operationId: listServices
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a service
+      operationId: createService
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/payments:
+    get:
+      summary: List payments
+      operationId: listPayments
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a payment
+      operationId: createPayment
+      responses:
+        "201": { description: Created }
+  /invoicing/v1/treasury:
+    get:
+      summary: List treasury / bank accounts
+      operationId: listTreasury
+      responses:
+        "200": { description: OK }
+  /invoicing/v1/expensesaccounts:
+    get:
+      summary: List expense accounts
+      operationId: listExpenseAccounts
+      responses:
+        "200": { description: OK }
+  /accounting/v1/dailyjournal:
+    get:
+      summary: List daily journal entries
+      operationId: listJournalEntries
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a journal entry
+      operationId: createJournalEntry
+      responses:
+        "201": { description: Created }
+  /crm/v1/funnels:
+    get:
+      summary: List CRM funnels
+      operationId: listCrmFunnels
+      responses:
+        "200": { description: OK }
+  /crm/v1/leads:
+    get:
+      summary: List CRM leads / opportunities
+      operationId: listCrmLeads
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a CRM lead
+      operationId: createCrmLead
+      responses:
+        "201": { description: Created }
+  /projects/v1/projects:
+    get:
+      summary: List projects
+      operationId: listProjects
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a project
+      operationId: createProject
+      responses:
+        "201": { description: Created }
+  /projects/v1/projects/{projectId}/tasks:
+    parameters:
+      - name: projectId
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      summary: List tasks for a project
+      operationId: listProjectTasks
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create a project task
+      operationId: createProjectTask
+      responses:
+        "201": { description: Created }
+  /team/v1/employees:
+    get:
+      summary: List employees
+      operationId: listEmployees
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create an employee
+      operationId: createEmployee
+      responses:
+        "201": { description: Created }
+  /team/v1/timetracking:
+    get:
+      summary: List time-tracking entries
+      operationId: listTimeTracking
+      responses:
+        "200": { description: OK }
