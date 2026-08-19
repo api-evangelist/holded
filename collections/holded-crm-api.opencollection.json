@@ -1,0 +1,59 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Holded REST Accounting Crm API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "key",
+      "value": "{{key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Crm",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List CRM funnels",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.holded.com/api/crm/v1/funnels"
+          },
+          "docs": "List CRM funnels"
+        },
+        {
+          "info": {
+            "name": "List CRM leads / opportunities",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.holded.com/api/crm/v1/leads"
+          },
+          "docs": "List CRM leads / opportunities"
+        },
+        {
+          "info": {
+            "name": "Create a CRM lead",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.holded.com/api/crm/v1/leads"
+          },
+          "docs": "Create a CRM lead"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

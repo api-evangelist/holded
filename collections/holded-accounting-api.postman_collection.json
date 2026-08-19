@@ -1,0 +1,187 @@
+{
+  "item": [
+    {
+      "id": "8d3f87de-1b53-407a-a4eb-23bdd100c528",
+      "name": "Accounting",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "52b28656-e816-4a9c-a507-4fbf651fdb6a",
+          "name": "List daily journal entries",
+          "request": {
+            "name": "List daily journal entries",
+            "description": {},
+            "url": {
+              "path": [
+                "accounting",
+                "v1",
+                "dailyjournal"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2aa5ea95-0546-4071-aaec-6b16ed55d224",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "accounting",
+                    "v1",
+                    "dailyjournal"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5ebe05a6-494a-41b4-b6c5-76dda6651a62",
+          "name": "Create a journal entry",
+          "request": {
+            "name": "Create a journal entry",
+            "description": {},
+            "url": {
+              "path": [
+                "accounting",
+                "v1",
+                "dailyjournal"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fc174235-ed26-4690-9fb0-fc007941c318",
+              "name": "Created",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "accounting",
+                    "v1",
+                    "dailyjournal"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.holded.com/api",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "402be3ed-ab3e-4e55-8dfd-c21c16bd460d",
+    "name": "Holded REST Accounting API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for the Holded business-management platform. Holded is part\nof Visma and offers ERP, CRM, accounting, invoicing, inventory, HR,\nprojects, and team collaboration capabilities. The Holded API\nexposes JSON over HTTPS, authenticated with a tenant API key passed\nvia the `key` request header. This spec captures the core resources\nin the public developer reference at developers.holded.com.\n\n\nContact Support:\n Name: Holded Developers",
+      "type": "text/plain"
+    }
+  }
+}

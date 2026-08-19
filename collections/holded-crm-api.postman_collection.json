@@ -1,0 +1,256 @@
+{
+  "item": [
+    {
+      "id": "1438de20-3862-4120-a8d2-015843a39a91",
+      "name": "Crm",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "ee7891a2-489f-4388-b33e-b83ac3e801e4",
+          "name": "List CRM funnels",
+          "request": {
+            "name": "List CRM funnels",
+            "description": {},
+            "url": {
+              "path": [
+                "crm",
+                "v1",
+                "funnels"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "32457e37-36c6-4812-b806-1b38a927c904",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "crm",
+                    "v1",
+                    "funnels"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "307584f6-1430-4619-a7e2-c8d541ef4b77",
+          "name": "List CRM leads / opportunities",
+          "request": {
+            "name": "List CRM leads / opportunities",
+            "description": {},
+            "url": {
+              "path": [
+                "crm",
+                "v1",
+                "leads"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "540be400-dab3-4a2b-8340-2c072e4dbb50",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "crm",
+                    "v1",
+                    "leads"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a05ba1e7-0d62-46c4-93ed-a99187e92ee4",
+          "name": "Create a CRM lead",
+          "request": {
+            "name": "Create a CRM lead",
+            "description": {},
+            "url": {
+              "path": [
+                "crm",
+                "v1",
+                "leads"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0c294336-9ba4-4ac9-b931-8cf7ccff4195",
+              "name": "Created",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "crm",
+                    "v1",
+                    "leads"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.holded.com/api",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "48db0ba9-302b-4944-aede-702bc40f962d",
+    "name": "Holded REST Accounting Crm API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for the Holded business-management platform. Holded is part\nof Visma and offers ERP, CRM, accounting, invoicing, inventory, HR,\nprojects, and team collaboration capabilities. The Holded API\nexposes JSON over HTTPS, authenticated with a tenant API key passed\nvia the `key` request header. This spec captures the core resources\nin the public developer reference at developers.holded.com.\n\n\nContact Support:\n Name: Holded Developers",
+      "type": "text/plain"
+    }
+  }
+}

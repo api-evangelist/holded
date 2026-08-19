@@ -1,0 +1,59 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Holded REST Accounting Team API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "key",
+      "value": "{{key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Team",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List employees",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.holded.com/api/team/v1/employees"
+          },
+          "docs": "List employees"
+        },
+        {
+          "info": {
+            "name": "Create an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.holded.com/api/team/v1/employees"
+          },
+          "docs": "Create an employee"
+        },
+        {
+          "info": {
+            "name": "List time-tracking entries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.holded.com/api/team/v1/timetracking"
+          },
+          "docs": "List time-tracking entries"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
