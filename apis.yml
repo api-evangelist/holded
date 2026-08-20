@@ -50,6 +50,14 @@ apis:
   - Invoicing
   - Accounting
   - Inventory
+  - Project
+  - HR
+  tags_raw:
+  - ERP
+  - CRM
+  - Invoicing
+  - Accounting
+  - Inventory
   - Projects
   - HR
   properties:
@@ -75,6 +83,8 @@ apis:
   humanURL: https://developers.holded.com
   baseURL: https://api.holded.com/api
   tags:
+  - CRM
+  tags_raw:
   - Crm
   properties:
   - type: OpenAPI
@@ -95,6 +105,8 @@ apis:
   humanURL: https://developers.holded.com
   baseURL: https://api.holded.com/api
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
