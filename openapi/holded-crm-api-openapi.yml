@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Holded REST Accounting Crm API
+  title: Holded REST CRM API
   description: 'REST API for the Holded business-management platform. Holded is part
 
     of Visma and offers ERP, CRM, accounting, invoicing, inventory, HR,
@@ -11,9 +11,7 @@ info:
 
     via the `key` request header. This spec captures the core resources
 
-    in the public developer reference at developers.holded.com.
-
-    '
+    in the public developer reference at developers.holded.com.'
   version: '1.0'
   contact:
     name: Holded Developers
@@ -24,7 +22,7 @@ servers:
 security:
 - ApiKeyAuth: []
 tags:
-- name: Crm
+- name: CRM
 paths:
   /crm/v1/funnels:
     get:
@@ -34,7 +32,7 @@ paths:
         '200':
           description: OK
       tags:
-      - Crm
+      - CRM
   /crm/v1/leads:
     get:
       summary: List CRM leads / opportunities
@@ -43,7 +41,7 @@ paths:
         '200':
           description: OK
       tags:
-      - Crm
+      - CRM
     post:
       summary: Create a CRM lead
       operationId: createCrmLead
@@ -51,7 +49,7 @@ paths:
         '201':
           description: Created
       tags:
-      - Crm
+      - CRM
 components:
   securitySchemes:
     ApiKeyAuth:

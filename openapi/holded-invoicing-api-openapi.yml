@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Holded REST Accounting Invoicing API
+  title: Holded REST Invoicing API
   description: 'REST API for the Holded business-management platform. Holded is part
 
     of Visma and offers ERP, CRM, accounting, invoicing, inventory, HR,
@@ -11,9 +11,7 @@ info:
 
     via the `key` request header. This spec captures the core resources
 
-    in the public developer reference at developers.holded.com.
-
-    '
+    in the public developer reference at developers.holded.com.'
   version: '1.0'
   contact:
     name: Holded Developers
