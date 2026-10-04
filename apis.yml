@@ -143,6 +143,9 @@ apis:
   - type: OpenAPI
     url: openapi/holded-team-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/holded-capability-edges.yml
+    name: Holded Business Capability Map
   - type: AgenticAccess
     url: agentic-access/holded-agentic-access.yml
   - type: DomainSecurity
