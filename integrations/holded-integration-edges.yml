@@ -1,0 +1,488 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/holded/integrations
+- https://n8n.io/integrations/holded/
+- https://composio.dev/toolkits/holded
+checked:
+- https://composio.dev/toolkits/holded
+- https://monid.ai/tools/holded
+- https://n8n.io/integrations/holded/
+- https://zapier.com/apps/holded/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: holded
+  url: https://zapier.com/apps/holded/integrations
+  external_url: http://holded.com/
+  partner_tier: GOLD
+  triggers:
+  - key: list_contacts
+    label: New Contact
+  - key: new_deal
+    label: New Deal
+  - key: new_invoice
+    label: New Sales Invoice
+  - key: new_purchase_invoice
+    label: New Purchase Invoice
+  - key: new_salesorder
+    label: New Sales Order
+  - key: new_salesreceipt
+    label: New Sales Receipt
+  actions:
+  - key: create_contact
+    label: Create Contact
+  - key: create_credit_note
+    label: Create Credit Note
+  - key: create_deal
+    label: Create Deal
+  - key: create_employee
+    label: Create Employee
+  - key: create_event
+    label: Create Event
+  - key: create_invoice
+    label: Create Sales Invoice
+  - key: create_payment
+    label: Create Payment
+  - key: create_product
+    label: Create Product
+  - key: create_purchase
+    label: Create Purchase Invoice
+  - key: create_purchase_order
+    label: Create Purchase Order
+  - key: create_quote
+    label: Create Quote
+  - key: create_salesorder
+    label: Create Sales Order
+  - key: create_salesreceipt
+    label: Create Sales Receipt
+  - key: pay_credit_note
+    label: Mark Credit Note as Paid
+  - key: pay_invoice
+    label: Mark Invoice as Paid
+  - key: send_invoice
+    label: Send Invoice
+  - key: send_sales_receipt
+    label: Send Sales Receipt
+  - key: update_contact
+    label: Update Contact
+  searches:
+  - key: find_contact
+    label: Find Contact
+- marketplace: n8n
+  channel: open-source-node
+  app: holded
+  url: https://n8n.io/integrations/holded/
+  identity: title
+  pair_pages: 0
+  pairs: []
+- marketplace: composio
+  channel: agent-gateway
+  app: holded
+  url: https://composio.dev/toolkits/holded
+  identity: action-prefix
+  actions:
+  - key: HOLDED_CREATE_CONTACT
+  - key: HOLDED_CREATE_INVOICE
+  - key: HOLDED_DELETE_CONTACT
+  - key: HOLDED_DELETE_INVOICE
+  - key: HOLDED_FIND_CONTACTS
+  - key: HOLDED_FIND_INVOICES
+  - key: HOLDED_GET_CONTACT
+  - key: HOLDED_GET_INVOICE
+  - key: HOLDED_UPDATE_CONTACT
+  - key: HOLDED_UPDATE_INVOICE
+edges:
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Mailchimp
+  partner: mailchimp
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/mailchimp
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://mailchimp.com/
+- partner_name: Google Forms
+  partner: google-forms
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/google-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://google.com/
+- partner_name: ThriveCart
+  partner: thrivecart
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/thrivecart
+  direction: third-party
+  category: eCommerce
+  partner_url: https://thrivecart.com/
+- partner_name: Pipedrive
+  partner: pipedrive
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/pipedrive
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://pipedrive.com/
+- partner_name: Google Contacts
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/google-contacts
+  direction: third-party
+  category: Contact Management
+  partner_url: https://www.google.com/contacts/
+- partner_name: Stripe
+  partner: stripe
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/stripe
+  direction: third-party
+  category: Payment Processing
+  partner_url: https://stripe.com/
+- partner_name: Kajabi
+  partner: kajabi
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/kajabi
+  direction: third-party
+  category: eCommerce
+  partner_url: http://kajabi.com/
+- partner_name: WooCommerce
+  partner: woocommerce
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/woocommerce
+  direction: third-party
+  category: eCommerce
+  partner_url: https://woocommerce.com/products/woocommerce-zapier/?utm_source=zapier&utm_medium=website&utm_campaign=integration
+- partner_name: Typeform
+  partner: typeform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/typeform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.typeform.com/signup?utm_medium=referral&utm_source=zapier&utm_campaign=zapier_integration&utm_content=marketplace
+- partner_name: Hotmart
+  partner: hotmart
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/hotmart-7006
+  direction: third-party
+  category: Online Courses
+  partner_url: https://www.hotmart.com/
+- partner_name: Notion
+  partner: notion
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/notion
+  direction: third-party
+  category: Task Management
+  partner_url: https://www.notion.so/
+- partner_name: Airtable
+  partner: airtable
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/airtable
+  direction: third-party
+  category: Databases
+  partner_url: https://airtable.com/
+- partner_name: Gmail
+  partner: gmail
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/gmail
+  direction: third-party
+  category: Email
+  partner_url: https://mail.google.com/
+- partner_name: Gravity Forms
+  partner: gravity-forms
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/gravity-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.gravityforms.com/?utm_campaign=partners&utm_source=zapier-listing-learn-more&utm_medium=free-placement
+- partner_name: Shopify
+  partner: shopify
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/shopify
+  direction: third-party
+  category: eCommerce
+  partner_url: https://www.shopify.com/
+- partner_name: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/facebook-lead-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://www.facebook.com/business/ads/lead-ads
+- partner_name: Google Drive
+  partner: google-drive
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/google-drive
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://www.google.com/drive/
+- partner_name: monday.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/monday
+  direction: third-party
+  category: Project Management
+  partner_url: https://monday.com/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Brevo
+  partner: brevo
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/brevo
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://www.sendinblue.com/?utm_medium=plugin&utm_source=zapier
+- partner_name: Calendly
+  partner: calendly
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/calendly
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://calendly.com/?utm_medium=partner&utm_source=zapier&utm_campaign=main_partner_page&utm_content=main_inbound_link
+- partner_name: Microsoft Excel
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/excel
+  direction: third-party
+  category: Microsoft
+  partner_url: https://zapier.com/office.com
+- partner_name: systeme.io
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/systemeio
+  direction: third-party
+  category: Marketing
+  partner_url: https://systeme.io/
+- partner_name: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/microsoft-outlook
+  direction: third-party
+  category: Calendar
+  partner_url: https://outlook.live.com/
+- partner_name: ClickUp
+  partner: clickup
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/clickup
+  direction: third-party
+  category: Project Management
+  partner_url: https://clickup.com/zapier
+- partner_name: FareHarbor
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/fareharbor
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://fareharbor.com/
+- partner_name: Tally
+  partner: tally
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/tally
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://try.tally.so/zapier
+- partner_name: Stripe (Legacy)
+  partner: stripe
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/stripe-legacy
+  direction: third-party
+  category: Payment Processing
+  partner_url: https://stripe.com/
+- partner_name: Google Ads
+  partner: google-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/holded/integrations/google-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://ads.google.com/
+templates:
+- title: Add new or updated Google Contacts to Holded
+  url: https://zapier.com/apps/google-contacts/integrations/holded/690018/add-new-or-updated-google-contacts-to-holded
+  apps:
+  - google-contacts
+  - holded
+- title: Add new Stripe invoices to Holded
+  url: https://zapier.com/apps/holded/integrations/stripe/732571/add-new-stripe-invoices-to-holded
+  apps:
+  - stripe
+  - holded
+- title: Send new Stripe customers to Holded as contacts
+  url: https://zapier.com/apps/holded/integrations/stripe/690016/send-new-stripe-customers-to-holded-as-contacts
+  apps:
+  - stripe
+  - holded
+- title: Add new Holded contacts as Mailchimp subscribers
+  url: https://zapier.com/apps/holded/integrations/mailchimp/742270/add-new-holded-contacts-as-mailchimp-subscribers
+  apps:
+  - holded
+  - mailchimp
+- title: Create Holded contacts from new Google Forms responses
+  url: https://zapier.com/apps/google-forms/integrations/holded/694847/create-holded-contacts-from-new-google-forms-responses
+  apps:
+  - google-forms
+  - holded
+- title: Create sales invoices in Holded for new completed checkout sessions in Stripe
+  url: https://zapier.com/apps/holded/integrations/stripe/1672870/create-sales-invoices-in-holded-for-new-completed-checkout-sessions-in-stripe
+  apps:
+  - stripe
+  - holded
+- title: Create rows in Google Sheets for new Holded sales invoices
+  url: https://zapier.com/apps/google-sheets/integrations/holded/1226444/create-rows-in-google-sheets-for-new-holded-sales-invoices
+  apps:
+  - holded
+  - google-sheets
+- title: Send new subscribers to Holded
+  url: https://zapier.com/apps/holded/integrations/mailchimp/689119/send-new-subscribers-to-holded
+  apps:
+  - mailchimp
+  - holded
+- title: Create Google Sheets rows for new Holded contacts
+  url: https://zapier.com/apps/google-sheets/integrations/holded/742272/create-google-sheets-rows-for-new-holded-contacts
+  apps:
+  - holded
+  - google-sheets
+- title: Add new HubSpot contacts to Holded
+  url: https://zapier.com/apps/holded/integrations/hubspot/689940/add-new-hubspot-contacts-to-holded
+  apps:
+  - hubspot
+  - holded
+- title: Send new Stripe payments as invoices in Holded
+  url: https://zapier.com/apps/holded/integrations/stripe/1639680/send-new-stripe-payments-as-invoices-in-holded
+  apps:
+  - stripe
+  - holded
+- title: Upload new Holded purchase invoices to Google Drive as files
+  url: https://zapier.com/apps/google-drive/integrations/holded/255620919/upload-new-holded-purchase-invoices-to-google-drive-as-files
+  apps:
+  - holded
+  - google-drive
+template_total: 379
