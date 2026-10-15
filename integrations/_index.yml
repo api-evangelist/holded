@@ -465,7 +465,7 @@
     app_slug: holded
     beta: false
     builder: unknown (not in the directory record)
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: holded-pipedream
   label: Pipedream
@@ -491,7 +491,7 @@
     actions: true
     sources: true
     builder: Pipedream repo (component)
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: holded-wordpress-own
   label: WordPress (own)
