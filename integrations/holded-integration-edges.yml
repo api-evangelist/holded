@@ -13,6 +13,9 @@ checked:
 - https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/holded/integrations
 - wordpress/integrations/wordpress-integration-edges.yml
+- https://advertising.amazon.com/partners/directory
+- https://sellercentral.amazon.com/gspn
+- https://sellercentral.amazon.com/selling-partner-appstore
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -526,6 +529,21 @@ edges:
   direction: third-party
   category: Ads & Conversion
   partner_url: https://ads.google.com/
+- partner_name: Amazon Selling Partner Appstore
+  partner: amazon-seller-central
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://sellercentral.amazon.com/selling-partner-appstore/dp/amzn1.sellerapps.app.f147caea-af66-4045-be36-a4d9404a83b6
+  mirror_of: amazon-seller-central/integrations/amazon-seller-central-integration-edges.yml
+  apps:
+  - Holded - simplify your business
+  detected: '2026-10-21'
+  detected_by: sweep-amazon-sp-api-appstore.py
 templates:
 - title: Add new or updated Google Contacts to Holded
   url: https://zapier.com/apps/google-contacts/integrations/holded/690018/add-new-or-updated-google-contacts-to-holded

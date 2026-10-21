@@ -543,3 +543,15 @@
   relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
+- slug: holded-amazon-selling-partner-appstore
+  label: Amazon Selling Partner Appstore
+  partner: amazon-seller-central
+  partner_name: Amazon Selling Partner Appstore
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://sellercentral.amazon.com/selling-partner-appstore/dp/amzn1.sellerapps.app.f147caea-af66-4045-be36-a4d9404a83b6
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
