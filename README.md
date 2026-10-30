@@ -1,4 +1,4 @@
-# Holded (holded)
+# Holded
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,65 +66,116 @@
 
 Holded is a cloud-based all-in-one business management platform from Spain (now part of Visma) that combines ERP, CRM, accounting, invoicing, inventory, project management, HR, and team collaboration features for small and medium-sized businesses. The Holded REST API provides programmatic access to invoicing, contacts, products, accounting, projects, employees, and CRM data using a simple API key authentication scheme over JSON.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/holded/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/holded/refs/heads/main/apis.yml)
+**Areas:** ERP · CRM · Accounting · Invoicing · Business Management · Small Business · Spain
 
-## Scope
+## Holded on APIs.io
 
-- **Type:** Index
+Everything profiled for Holded is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/holded/](https://apis.io/providers/holded/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (6)
 
-- ERP
-- CRM
-- Accounting
-- Invoicing
-- Business Management
-- SMB
-- Spain
+- [Holded REST API](https://apis.io/apis/holded/rest-api/) — REST API for managing invoicing, contacts, products, accounting, projects, employees, and CRM records inside the Holded business management platform.…
+- [Holded Accounting API](https://apis.io/apis/holded/holded-accounting-api/) — The Accounting API from Holded — 1 operation(s) for accounting.
+- [Holded Crm API](https://apis.io/apis/holded/holded-crm-api/) — The Crm API from Holded — 2 operation(s) for crm.
+- [Holded Invoicing API](https://apis.io/apis/holded/holded-invoicing-api/) — The Invoicing API from Holded — 15 operation(s) for invoicing.
+- [Holded Projects API](https://apis.io/apis/holded/holded-projects-api/) — The Projects API from Holded — 2 operation(s) for projects.
+- [Holded Team API](https://apis.io/apis/holded/holded-team-api/) — The Team API from Holded — 2 operation(s) for team.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### Holded REST API
+Model Context Protocol servers that expose the API to agents.
 
-REST API for managing invoicing, contacts, products, accounting, projects, employees, and CRM records inside the Holded business management platform. Authentication uses an API key passed via the `key` header on every request.
+- [holded](https://apis.io/servers/holded/holded/)
 
-- **Human URL:** [https://developers.holded.com](https://developers.holded.com)
-- **Base URL:** `https://api.holded.com/api`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- ERP
-- CRM
-- Invoicing
-- Accounting
-- Inventory
-- Projects
-- HR
+- [Holded Agentic Access](https://apis.io/agentic-access/holded/holded-agentic-access/)
 
-#### Properties
+#### Collections (6)
 
-- [Documentation](https://developers.holded.com/reference)
-- [A P I  Key  Guide](https://developers.holded.com/reference/api-key-1)
-- [Help  Center](https://help.holded.com/en/articles/6896051-how-to-generate-and-use-the-holded-api)
-- [Postman Collection](collections/holded.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/holded.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Holded REST API](https://apis.io/collections/holded/open-holded/)
+- [Holded REST Accounting API](https://apis.io/collections/holded/open-holded-accounting-api/)
+- [Holded REST Accounting Crm API](https://apis.io/collections/holded/open-holded-crm-api/)
+- [Holded REST Accounting Invoicing API](https://apis.io/collections/holded/open-holded-invoicing-api/)
+- [Holded REST Accounting Projects API](https://apis.io/collections/holded/open-holded-projects-api/)
+- [Holded REST Accounting Team API](https://apis.io/collections/holded/open-holded-team-api/)
 
-- [GitHub Organization](https://github.com/holdedhub)
-- [LinkedIn](https://www.linkedin.com/company/holded)
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Holded Authentication](https://apis.io/security/holded/holded-authentication/)
+- [Holded Domain Security](https://apis.io/security/holded/holded-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.holded.com)
 - [Documentation](https://developers.holded.com)
 - [Pricing](https://www.holded.com/pricing)
-- [Sign Up](https://app.holded.com/register)
-- [L L Ms Txt](https://api.holded.com/llms.txt)
+- [Blog](https://www.holded.com/en/blog)
+- [GitHub](https://github.com/holdedhub)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 27.1** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 47.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 23.7 |
+
+**Agent readiness 43.3** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/holded/](https://apis.io/providers/holded/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Holded: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/holded/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
